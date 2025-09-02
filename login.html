@@ -9,9 +9,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    
 
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/v1/kakao.min.js"
+    integrity="${INTEGRITY_VALUE}" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/login.js" type="module" defer></script>
+    <script src="js/kakaoinit.js" defer></script>
   </head>
 
   <body class="bg-gray-100 flex items-center justify-center h-screen">
@@ -30,6 +34,11 @@
           class="w-full flex items-center justify-center bg-gray-800 text-white py-2 px-4 shadow-md rounded-lg hover:bg-gray-900"
         >
           <i class="fa-brands fa-github mr-2"></i>Github로 로그인
+        </button>
+        <button
+          id="kakao-login-btn"
+          class="w-full focus:outline-none">
+          <img src="img/kakao_login_medium_wide.png" alt="카카오톡 로그인"></img>
         </button>
       </div>
 
