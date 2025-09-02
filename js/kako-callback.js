@@ -8,7 +8,9 @@ if (code) {
     body: new URLSearchParams({
       grant_type: "authorization_code",
       client_id: "bf270eb97766b648665de07b0ebceb1a",
-      redirect_uri: "https://127.0.0.1:5500/kakao-callback.html",
+      /* redirect_uri: "https://127.0.0.1:5500/kakao-callback.html", */
+      redirect_uri: "https://eun90615-arch.github.io/auth-demo/kakao-callback.html",
+
       code: code,
     }),
   })
